@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragmentB">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="name : " />
+            <TextView
+                android:textSize="30sp"
+                android:id="@+id/tv_show_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="test" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_num1"
+            android:layout_width="100dp"
+            android:inputType="number"
+            android:hint="num1"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_num2"
+            android:hint="num2"
+            android:inputType="number"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:text="go to fragment C"
+            android:id="@+id/btn_go_c"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>
